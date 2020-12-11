@@ -14,9 +14,11 @@ class factorial
    }
    factorial(factorial &access )
    { 
-     while ( access.nstart <= access.N) {
-     access.fstart *= access.nstart;
-     ++access.nstart;
+     while ( access.nstart <= access.N) 
+     {
+        access.fstart *= access.nstart;
+        ++access.nstart;
+     }
    }
   cout<<"\nFactorial of "<<access.N <<" = "<< access.fstart;
 };
